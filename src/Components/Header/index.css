@@ -1,0 +1,21 @@
+.Header{
+    text-align: center;
+    color: white;
+    background: rgb(146,71,68);
+    border-bottom-right-radius: 10px;
+    width:250px;
+    height:80px;
+}
+
+.Header-heading{
+    font-family: Helvetica;
+    font-size: 25px;
+    /* margin:15px; */
+    padding: 15px;
+    font-weight: 300;
+    text-align: center;
+    /* text-decoration: underline; */
+}
+.Header-big-text{
+    font-size: 36px;
+}

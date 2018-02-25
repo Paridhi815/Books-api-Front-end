@@ -1,0 +1,12 @@
+.Body{
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.Grouped-author{
+    font-family:Helvetica;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}

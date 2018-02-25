@@ -1,0 +1,7 @@
+.GroupedBooks-pane{
+    padding: 10px;
+    background-color: rgb(233,142,77);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

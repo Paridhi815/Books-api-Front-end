@@ -1,0 +1,50 @@
+.BookCard{
+    margin: 30px 60px 30px 60px;
+    height: 35vh;
+    width: 250px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    box-shadow: 0 0 5px #222;
+    overflow: hidden;
+    background: white;
+}
+.Book-img{
+    height: 15vh;
+    width:100%;
+    background-position: center;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Book-info{
+    font-family: Helvetica;
+    position: relative;
+    height: 52%;
+    background: white;
+    padding:10px;
+}
+.Book-name{
+    font-weight:bold;
+    font-size: 15px;
+}
+.Book-rating{
+    font-weight:lighter;
+    font-size: 30px;
+}
+.Book-author{
+    position: absolute;
+    right:20px;
+    bottom:14px;
+    font-weight: bold;
+}
+
+.hi{
+    color:white;
+    background: gray;
+    position: absolute;
+    top:-18px;
+    right:20px;
+    height: 20%;
+    border-radius: 50%;
+}
