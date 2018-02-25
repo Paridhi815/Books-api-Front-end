@@ -39,9 +39,19 @@
     font-weight: bold;
 }
 
-.hi{
+.Book-like-button{
     color:white;
     background: gray;
+    position: absolute;
+    top:-18px;
+    right:20px;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.Book-like-button-liked{
+    color:white;
+    background:red;
     position: absolute;
     top:-18px;
     right:20px;

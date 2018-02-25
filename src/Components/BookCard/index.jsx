@@ -6,19 +6,20 @@ class BookCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-    //   like: this.props.book.like === t ? t : f,
+      like: this.props.like === 0 ? 1 : 0,
     };
   }
 
-  // getLikeStatus(index) {
-  //   console.log('Books inside onSync:', this.props.allBooksList);
-  //   const url = `/like/${this.props.allBooksList[index].bookid}/1`;
-  //   fetch(url, {
-  //     method: 'PUT',
-  //     // body: JSON.stringify(this.props.notes),
-  //   }).then(response => response.text())
-  //     .then(data => console.log(data));
-  // }
+  handleLike(bookid) {
+    const url = this.state.like === 0 ? `/opinion/${bookid}/1` : `/opinion/${bookid}/0`;
+    fetch(url, {
+      method: 'PUT',
+    }).then(() => {
+      this.setState({
+        like: this.state.like === 0 ? 1 : 0,
+      });
+    });
+  }
 
 
   render() {
@@ -31,9 +32,8 @@ class BookCard extends React.Component {
         />
         <div className="Book-info">
           <button
-            className="hi"
-            // className={this.state.like === t ? 'Book-like-button-liked' : 'Book-like-button'}
-            // onClick={() => this.likeHandler(this.props.book.bookid)}
+            className={this.state.like === 1 ? 'Book-like-button-liked' : 'Book-like-button'}
+            onClick={() => this.handleLike(this.props.bookid)}
           >
             <i className="material-icons">favorite</i>
           </button>
@@ -49,7 +49,7 @@ class BookCard extends React.Component {
 }
 
 BookCard.propTypes = {
-  id: PropTypes.number.isRequired,
+  bookid: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   rating: PropTypes.number.isRequired,
   author: PropTypes.string.isRequired,

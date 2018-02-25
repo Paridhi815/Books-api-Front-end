@@ -18,7 +18,7 @@ const GroupedBooks = (props) => {
   <BookCard
     name={book.name}
     author={book.author}
-    id={book.id}
+    bookid={book.bookid}
     rating={book.rating}
     like={book.like}
   />
