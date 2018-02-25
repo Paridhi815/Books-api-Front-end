@@ -6,7 +6,7 @@ class BookCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      like: this.props.like === 0 ? 1 : 0,
+      like: this.props.like === 0 ? 0 : 1,
     };
   }
 
