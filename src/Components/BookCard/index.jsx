@@ -10,8 +10,8 @@ class BookCard extends React.Component {
     };
   }
 
-  // likeHandler(bookid) {
-  //   console.log('Books inside onSync:', this.props.book);
+  // getLikeStatus(index) {
+  //   console.log('Books inside onSync:', this.props.allBooksList);
   //   const url = `/like/${this.props.allBooksList[index].bookid}/1`;
   //   fetch(url, {
   //     method: 'PUT',
@@ -19,6 +19,7 @@ class BookCard extends React.Component {
   //   }).then(response => response.text())
   //     .then(data => console.log(data));
   // }
+
 
   render() {
     return (
