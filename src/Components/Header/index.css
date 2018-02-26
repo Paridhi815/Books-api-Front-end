@@ -19,3 +19,11 @@
 .Header-big-text{
     font-size: 36px;
 }
+
+.line{
+    margin-top: 0px;
+    height: 2px;
+    background-color: white;
+    border-radius:2px; 
+    opacity: 0.5;
+}

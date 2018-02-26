@@ -1,7 +1,9 @@
 .BookCard{
-    margin: 30px 60px 30px 60px;
-    height: 35vh;
-    width: 250px;
+    margin: 30px 3%;
+    height: 400px; 
+    width: 300px;
+    display: flex;
+    flex-direction: column;
     /* border: 1px solid black; */
     border-radius: 15px;
     box-shadow: 0 0 5px #222;
@@ -9,7 +11,7 @@
     background: white;
 }
 .Book-img{
-    height: 15vh;
+    height: 17vh;
     width:100%;
     background-position: center;
     object-fit: cover;
@@ -18,43 +20,54 @@
 }
 
 .Book-info{
-    font-family: Helvetica;
+    font-family: 'Helvetica neue';
     position: relative;
     height: 52%;
     background: white;
-    padding:10px;
+    padding:17px;
+    font-weight: 500;
 }
 .Book-name{
+    font-family: 'Helvetica neue';
     font-weight:bold;
-    font-size: 15px;
+    font-size: 95%;
+    height: 30px;
 }
 .Book-rating{
-    font-weight:lighter;
-    font-size: 30px;
+    font-family: 'Helvetica neue';
+    padding-top:20px; 
+    font-weight: 200 ;
+    font-size: 35px;
 }
 .Book-author{
+    font-size: 20px;
     position: absolute;
     right:20px;
     bottom:14px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .Book-like-button{
+    padding-top:5px;
+    border: none;
     color:white;
     background: gray;
     position: absolute;
-    top:-18px;
-    right:20px;
-    height: 20%;
-    border-radius: 50%;
+    top:-9%;
+    right:6%;
+    height: 17%;
+    border-radius: 100%;
 }
 
 .Book-like-button-liked{
+    padding-top:5px;
     color:white;
+    border: none;
     background:red;
     position: absolute;
-    top:-18px;
-    right:20px;
-    height: 20%;
-    border-radius: 50%;
+    top:-9%;
+    right:6%;
+    height: 17%;
+    border-radius: 100%;
 }

@@ -1,15 +1,14 @@
 .App{
     display: flex;
-    height: 100vh;
     /* flex-grow: 1;
     box-sizing: border-box; */
 }
 .App-column{
     margin:0;
+    padding-left: 80px;
 }
 body{
     margin:0;
-    height: 100vh;
 }
 #root{
     height:100vh;

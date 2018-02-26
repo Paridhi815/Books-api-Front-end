@@ -6,6 +6,7 @@ const Header = props => (
   <div className="Header">
     <header className="Header-heading">
       {props.children}
+      <hr className="line" />
     </header>
   </div>
 );

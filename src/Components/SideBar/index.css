@@ -1,27 +1,43 @@
 .SideBar{
     display: flex;
+    position: fixed;
     flex-direction: column;
     text-align: center;
     color: white;
     background-color: rgb(47,58,71);
-    width: 130px;
+    width: 80px;
     height: 100vh;
     padding: 10px 0;
     /* box-sizing: border-box; */
     justify-content: space-between;
 }
-.SideBar-heading{
+.SideBar-Heading{
 font-family: Helvetica;
+font-weight: 700;
+font-size: 30px;
 /* font-weight: 500; */
-padding: 0;
+padding-left: 0;
 margin: 0;
 margin-top: 10px;
+}
+.increaseSize{
+    font-size: 45px;
+    padding: 25px 0px;
+}
+
+.Big-text{
+    font-size: 50px;
+}
+.Small-text{
+    font-size: 35px;
 }
 
 .SideBar-button-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
+    justify-content: space-between;
 }
 
 .SideBar-button{
